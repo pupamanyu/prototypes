@@ -59,7 +59,7 @@ event-branching
 
 ## Requirements
 
-- Java 22 (or higher)
+- Java 11 (or higher)
 - Maven 3.x (for building the project)
 
 ## Setup
@@ -67,11 +67,11 @@ event-branching
 Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/pupamanyu/event-branching.git
+git clone https://github.com/pupamanyu/prototypes.git
 cd event-branching
 ```
 
-Make sure you have Java 22 and Maven installed:
+Make sure you have Java 11 and Maven installed:
 
 ```bash
 java -version
