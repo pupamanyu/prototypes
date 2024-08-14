@@ -78,6 +78,38 @@ java -version
 mvn -version
 ```
 
+## Modifying KafkaConfig
+
+To customize the Kafka connection details such as bootstrap servers, Kafka topic, and Kafka group ID, you need to modify the `KafkaConfig.java` file located in the `src/main/java/com/example/config` directory.
+
+### 1. Open KafkaConfig.java
+
+Navigate to `src/main/java/com/example/config/KafkaConfig.java` and open the file in your preferred text editor or IDE.
+
+### 2. Modify Bootstrap Servers
+
+Update the `KAFKA_BOOTSTRAP_SERVERS` variable to point to your Kafka cluster.
+
+```java
+String KAFKA_BOOTSTRAP_SERVERS = "your.kafka.broker:9092";
+```
+
+### 3. Update Kafka Topic
+
+Change the `KAFKA_TOPIC` variable to your desired Kafka topic.
+
+```java
+String KAFKA_TOPIC = "your_kafka_topic";
+```
+
+### 4. Set Kafka Group ID
+
+Modify the `KAFKA_GROUP_ID` variable to your specific consumer group ID.
+
+```java
+String KAFKA_GROUP_ID = "your_kafka_group_id";
+```
+
 ## Running the Application
 
 You can run the application as either an event producer or an event consumer using the `--run` flag.
